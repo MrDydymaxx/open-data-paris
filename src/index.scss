@@ -1,6 +1,6 @@
 @import './reset.scss';
-$appBackground: #303030;
-$titleColor: #37A59A;
+$appBackground: #36393F;
+$titleColor: #3498BD;
 
 @mixin inColumn() {
   height: 100%;
@@ -72,7 +72,7 @@ $titleColor: #37A59A;
   }
 
   .navbar {
-    background-color: aliceblue;
+    background-color: #B9BBBE;
   }
 
   span,
