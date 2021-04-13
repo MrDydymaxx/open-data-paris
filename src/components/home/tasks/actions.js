@@ -4,14 +4,17 @@ export const actionsType = {
   CHECK_TASK: 'CHECK_TASK',
 };
 
-export const addTask = () => ({
+export const addTask = (value) => ({
   type: actionsType.ADD_TASK,
+  value,
 });
 
-export const deleteTask = () => ({
+export const deleteTask = (value) => ({
   type: actionsType.DELETE_TASK,
+  value,
 });
 
-export const checkTask = () => ({
+export const checkTask = (value) => ({
   type: actionsType.CHECK_TASK,
+  value,
 });

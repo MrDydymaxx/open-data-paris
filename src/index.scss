@@ -1,0 +1,87 @@
+@import './reset.scss';
+$appBackground: #303030;
+$titleColor: #37A59A;
+
+@mixin inColumn() {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#container {
+  background-color: $appBackground;
+  color: white;
+
+  .image {
+    max-width: 100%;
+  }
+
+  h1,
+  h2,
+  .card-title {
+    color: $titleColor;
+  }
+
+  .formulaire {
+    min-height: 100vh;
+    background-color: aliceblue;
+
+    .openDataForm {
+      @include inColumn();
+      justify-content: center;
+      align-items: center;
+
+      input {
+        margin: 5% 0;
+      }
+
+      button {
+        width: 100%;
+        margin: 5% 0;
+      }
+
+      span {
+        color: $appBackground;
+      }
+    }
+
+    .openDataForm-choice {
+      @include inColumn();
+      justify-content: space-around;
+      color: $appBackground;
+    }
+  }
+
+  .body {
+    height: 100vh;
+    margin: 1%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    .cards {
+      height: 98.5%;
+      border-radius: 1rem;
+      background-color: #454545;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .navbar {
+    background-color: aliceblue;
+  }
+
+  span,
+  .card-title {
+    font-weight: bold;
+  }
+
+  .map {
+    height: 75vh;
+    width: 100%;
+  }
+}
