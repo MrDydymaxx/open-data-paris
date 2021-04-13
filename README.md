@@ -5,7 +5,7 @@ An app that allows you to list events in Paris using the Opendata API. This proj
 
 ## Installing
 
-git clone https://github.com/MrDydymaxx/react-commerce.git
+git clone https://github.com/MrDydymaxx/open-data-paris.git
 npm i
 npm start
 
